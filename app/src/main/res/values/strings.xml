@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CovidApp</string>
+    <string name="about_covid">Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus. Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment.</string>
+    <string name="sample_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+</resources>
