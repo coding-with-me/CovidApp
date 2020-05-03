@@ -67,6 +67,7 @@
                         android:textSize="20sp" />
 
                     <TextView
+                        android:id="@+id/txtInfected"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/gilroy_bold"
@@ -111,6 +112,7 @@
                             android:textSize="20sp" />
 
                         <TextView
+                            android:id="@+id/txtRecoverd"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/gilroy_bold"
@@ -150,6 +152,7 @@
                             android:textSize="20sp" />
 
                         <TextView
+                            android:id="@+id/txtDeceased"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/gilroy_bold"
@@ -182,6 +185,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/txtViewSymptoms"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="15dp"
@@ -236,6 +240,7 @@
                     android:textSize="20sp" />
 
                 <Button
+                    android:id="@+id/btnKnowMore"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -277,6 +282,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/txtViewPrecautions"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="15dp"

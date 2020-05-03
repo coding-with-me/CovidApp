@@ -2,10 +2,11 @@ package com.nopalyer.covidapp
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class PrecautionsAdapter(var precautionsList: ArrayList<PrecautionsModel>):RecyclerView.Adapter<PrecautionsAdapter.ViewHolder>() {
+class PrecautionsAdapter(var precautionsList: ArrayList<Model>):RecyclerView.Adapter<PrecautionsAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PrecautionsAdapter.ViewHolder {
 
         val inflater = LayoutInflater.from(parent.context)
@@ -22,11 +23,15 @@ class PrecautionsAdapter(var precautionsList: ArrayList<PrecautionsModel>):Recyc
     }
 
     class ViewHolder(inflater: LayoutInflater,viewGroup: ViewGroup):
-        RecyclerView.ViewHolder(inflater.inflate(R.layout.item_precautions,viewGroup,false)){
+        RecyclerView.ViewHolder(inflater.inflate(R.layout.item_symptoms,viewGroup,false)){
 
-        fun bind(precautionsModel: PrecautionsModel){
-            val precautionText = itemView.findViewById<TextView>(R.id.txtPrecaution)
-            precautionText.text = precautionsModel.precautionsText
+        fun bind(precautionsModel: Model){
+            val symptomsText = itemView.findViewById<TextView>(R.id.txtSymptoms)
+            val symptomsTextDetail = itemView.findViewById<TextView>(R.id.txtSymptomsDetail)
+            val imageView = itemView.findViewById<ImageView>(R.id.imageView)
+            imageView.setImageResource(precautionsModel.imageview)
+            symptomsText.text = precautionsModel.symptomsText
+            symptomsTextDetail.text = precautionsModel.symptomsDetail
         }
 
     }
